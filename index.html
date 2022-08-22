@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Smartmockups - Schiller</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src='./src/Globals.js'></script>
+        <script src='./src/main.js' type="module"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Smartmockups - WebGL programming tasks</h1>
+        </header>
+        <main>
+            <article id="image_manipulator">
+                <h2>Image manipulation & layer blending</h2>
+                <div class="editor_wrapper">
+                    <div class="canvas_wrapper">
+                        <canvas id="wgl1_context" width='640' height='480'></canvas>
+                        <div class="canvas_error">WebGL 1.0 Not supported</div>
+                    </div>
+                    <div id="layers_display">
+                        <div id="layers_display_label">Layers</div>
+                    </div>
+                </div>
+                <div class="form_container">
+                    <table class="form_tbl">
+                        <tr class="form_tbl_row">
+                            <td>Image PNG/JPG:</td>
+                            <td colspan="3"><input type="file" class="input_file" name="input_file"> <br/></td>
+                        </tr>
+                        <tr class="form_tbl_row">
+                            <td>Brigthness:</td>
+                            <td><input type="checkbox" class="img_adjust_check" id="check_Brightness" checked/></td>
+                            <td><input type="range" min="-100.0" max="100.0" value="0" class="img_adjust_slider" id="range_Brightness" name="range_brightness"></td>
+                            <td><span id="value_text_Brightness">0.0</span></td>
+                        </tr>
+                        <tr class="form_tbl_row">
+                            <td>Contrast:</td>
+                            <td><input type="checkbox" class="img_adjust_check" id="check_Contrast" checked/></td>
+                            <td><input type="range" min="0.0" max="200.0" value="100.0" class="img_adjust_slider" id="range_Contrast" name="range_contrast"></td>
+                            <td><span id="value_text_Contrast">1.0</span></td>
+                        </tr>
+                        <tr class="form_tbl_row">
+                            <td>Gamma corr.:</td>
+                            <td><input type="checkbox" class="img_adjust_check" id="check_Gamma" checked/></td>
+                            <td><input type="range" min="0.0" max="200.0" value="100.0" class="img_adjust_slider" id="range_Gamma" name="range_gamma"></td>
+                            <td><span id="value_text_Gamma">1.0</span></td>
+                        </tr>
+                        <tr class="form_tbl_row">
+                            <td>Saturation:</td>
+                            <td><input type="checkbox" class="img_adjust_check" id="check_Saturation" checked/></td>
+                            <td><input type="range" min="0.0" max="400.0" value="100.0" class="img_adjust_slider" id="range_Saturation" name="range_satur"></td>
+                            <td><span id="value_text_Saturation">1.0</span></td>
+                        </tr>
+                        <tr class="form_tbl_row">
+                            <td>Hue:</td>
+                            <td><input type="checkbox" class="img_adjust_check" id="check_Hue" checked/></td>
+                            <td><input type="range" min="0.0" max="100.0" value="100.0" class="img_adjust_slider" id="range_Hue" name="range_hue"></td>
+                            <td><span id="value_text_Hue">1.0</span></td>
+                        </tr>
+                        <tr class="form_tbl_row">
+                            <td>Gauss blur:</td>
+                            <td><input type="checkbox" class="img_adjust_check" id="check_GaussBlurRadius" checked/></td>
+                            <td><input type="range" min="0" max="5" value="0" class="img_adjust_slider" id="range_GaussBlurRadius" name="range_gauss"></td>
+                            <td><span id="value_text_GaussBlurRadius">0</span></td>
+                        </tr>
+                    </table>
+                    <div class="console_output">
+                        <div style="font-weight: bold; text-decoration: underline;">Console output</div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>

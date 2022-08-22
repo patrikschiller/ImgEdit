@@ -2,7 +2,7 @@
 Simple GPU accelerated image editor (Work In Progress)
 - Implemented using JavaScript ES6+ & WebGL 1.0
 - Enables per-layer image (composition) adjustments and layer blending
-- http://schillerpatrik.com/imgedit/
+- <a href='http://schillerpatrik.com/imgedit/' target='_blank'>http://schillerpatrik.com/imgedit/</a>
 
 <p style="margin-left: 2em">
    <img src="snapshot.JPG" style="width: 35%">

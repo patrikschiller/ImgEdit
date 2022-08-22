@@ -11,11 +11,12 @@ Simple GPU accelerated image editor (Work In Progress)
 ## Image adjustments
 - contrast
 - brightness
+- gamma correction
 - hue + saturation
 - Gaussian blur (single pass 2D convolution)
 
 ## ToDo
-- Image scaling (currently the scale (aspect ratio) is derived form the last image/layer loaded)
+- Image scaling (currently the scale (aspect ratio) is derived from the last image/layer loaded)
 - Variable layers order (layers can be re-ordered by drag&drop in the layers panel)
 - Better Gaussian blur methods - separable 2-pass & single pass aproximate GB
-- Add new  and more complex tools
+- Add new and more complex tools

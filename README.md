@@ -4,6 +4,10 @@ Simple GPU accelerated image editor (Work In Progress)
 - Enables per-layer image (composition) adjustments and layer blending
 - http://schillerpatrik.com/imgedit/
 
+<p style="margin-left: 2em">
+   <img src="snapshot.JPG" style="width: 35vh" width="600px">
+</p>
+
 ## Layers
 - each layer can be separately adjusted
 - layer blending modes: screen, normal, multiply
@@ -20,3 +24,8 @@ Simple GPU accelerated image editor (Work In Progress)
 - Variable layers order (layers can be re-ordered by drag&drop in the layers panel)
 - Better Gaussian blur methods - separable 2-pass & single pass aproximate GB
 - Add new and more complex tools
+
+## Known Bugs
+- On older Android devices, alpha gradient for complete black doesn't work 
+  - [0,0,0, 0.0] --> [0,0,0, 1.0] represented by data/masks/gradient_fullblack.png doesn't work
+  - Fix: add some color to one of the channels, e.g. 1/255 to red channel, represented by data/masks/gradient_r1.png

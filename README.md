@@ -4,6 +4,10 @@ Simple GPU accelerated image editor (Work In Progress)
 - Enables per-layer image (composition) adjustments and layer blending
 - http://schillerpatrik.com/imgedit/
 
+<p style="margin-left: 2em">
+   <img src="snapshot.JPG" style="width: 35vh" width="600px">
+</p>
+
 ## Layers
 - each layer can be separately adjusted
 - layer blending modes: screen, normal, multiply

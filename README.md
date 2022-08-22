@@ -5,7 +5,7 @@ Simple GPU accelerated image editor (Work In Progress)
 - http://schillerpatrik.com/imgedit/
 
 <p style="margin-left: 2em">
-   <img src="snapshot.JPG" style="width: 35vh" width="600px">
+   <img src="snapshot.JPG" style="width: 35vh">
 </p>
 
 ## Layers
